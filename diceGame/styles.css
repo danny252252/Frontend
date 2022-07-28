@@ -10,6 +10,16 @@
 
 }
 
+#button{
+  display: block;
+  margin: 100px auto;
+  font-size: 3rem;
+  border-radius: 12px;
+  font-family: 'Indie Flower', cursive;
+  background-color: #343e4e;
+  color: #4ECCA3;
+}
+
 body {
   background-color: #393E46;
 }
