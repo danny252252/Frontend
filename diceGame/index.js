@@ -1,11 +1,20 @@
-var getRandomNum1 = Math.floor(Math.random() * 6 + 1);
-var getRandomNum2 = Math.floor(Math.random() * 6 + 1);
 
-var ply1 = prompt("player one name:");
-var ply2 = prompt("player two name:");
+  var ply1 = prompt("player one name:");
+  var ply2 = prompt("player two name:");
 
-document.querySelector("#ply1").innerHTML = ply1;
-document.querySelector("#ply2").innerHTML = ply2;
+document.querySelector("button").addEventListener("click", startGame)
+
+
+function startGame() {
+
+  var getRandomNum1 = Math.floor(Math.random() * 6 + 1);
+  var getRandomNum2 = Math.floor(Math.random() * 6 + 1);
+  
+
+  
+  document.querySelector("#ply1").innerHTML = ply1;
+  document.querySelector("#ply2").innerHTML = ply2;
+  
 
 
   if (getRandomNum1 === 1) {
@@ -43,6 +52,9 @@ document.querySelector("#ply2").innerHTML = ply2;
   } else if (getRandomNum1 === getRandomNum2) {
     document.querySelector("h1").innerHTML = "Draw";
   }
+
+
+}
 
 console.log(getRandomNum1);
 console.log(getRandomNum2);
